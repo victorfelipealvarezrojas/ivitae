@@ -1,3 +1,4 @@
+version: "3"
 name: Deploy ivitae to aws eb
 on:
   push:
@@ -6,7 +7,6 @@ on:
 
 jobs:
   deploy:
-    version: 1.0.0
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
