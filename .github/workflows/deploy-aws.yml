@@ -22,7 +22,7 @@ jobs:
           application_name: docker-react
           environment_name: Docker-react-env
           version_label: 1.0.0
-          version: 1.0.0
+          version_description: 1.0.0
           existing_bucket_name: elasticbeanstalk-us-east-1-575368539790
           region: us-east-1
           deployment_package: deploy.zip
