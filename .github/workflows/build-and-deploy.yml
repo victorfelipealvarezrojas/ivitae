@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BUCKET: bucket-front-aws
-      DIST: build
+      DIST: dist
       REGION: us-east-1
       DIST_ID: EIX094GKUYK8T
     steps:
