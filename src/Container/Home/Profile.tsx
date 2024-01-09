@@ -14,7 +14,8 @@ export const Profile = () => {
             'Docker',
             'Docker Compose',
             'Apache Kafka',
-            'AWS (Elastic Beanstalk)'
+            'AWS Elastic Beanstalk',
+            'AWS S3'
         ],
         loop: true,
         typeSpeed: 50,
