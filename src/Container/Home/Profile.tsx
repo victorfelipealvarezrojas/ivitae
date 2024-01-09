@@ -6,6 +6,7 @@ export const Profile = () => {
 
     const [typeEffect] = useTypewriter({
         words: [
+            'Nest Js',
             'React Js',
             'Next Js',
             'Node Js',
