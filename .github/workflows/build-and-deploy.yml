@@ -38,5 +38,5 @@ jobs:
       - name: invalidation to CloudFront. delete cache files
         run: |
           aws cloudfront create-invalidation \
-            --distribution-id ${{env.DIST}} \
+            --distribution-id ${{env.DIST_ID}} \
             --paths "*"
