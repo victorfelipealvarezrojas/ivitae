@@ -28,6 +28,12 @@ jobs:
           npm ci --production
           npm install --save-dev @types/react
 
+      - name: Run Tests
+        run: npm test
+
+      - name: Check Test Status
+        run: exit $(npm test -- --silent)
+
       - name: Build Static Website
         run: npm run build
 
