@@ -33,8 +33,12 @@ jobs:
 
       - name: Check Test Status
         run: |
-          if [[ $(npm test -- --silent) != *"0 failed"* ]]; then
+          test_output=$(npm test -- --silent)
+          if echo "$test_output" | grep -q "0 failed"; then
+            echo "All tests passed."
+          else
             echo "Tests failed. Exiting..."
+            echo "$test_output"
             exit 1
           fi
 
