@@ -32,7 +32,11 @@ jobs:
         run: npm test
 
       - name: Check Test Status
-        run: exit $(npm test -- --silent)
+        run: |
+          if [[ $(npm test -- --silent) != *"0 failed"* ]]; then
+            echo "Tests failed. Exiting..."
+            exit 1
+          fi
 
       - name: Build Static Website
         run: npm run build
