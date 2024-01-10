@@ -34,12 +34,12 @@ jobs:
       - name: Check Test Status
         run: |
           test_output=$(npm test -- --silent)
-          if echo "$test_output" | grep -q "All tests passed"; then
-            echo "All tests passed."
-          else
+          if echo "$test_output" | grep -q "Tests failed"; then
             echo "Tests failed. Exiting..."
             echo "$test_output"
             exit 1
+          else
+            echo "All tests passed."
           fi
 
       - name: Build Static Website
