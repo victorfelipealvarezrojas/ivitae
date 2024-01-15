@@ -11,49 +11,49 @@ a:hover {
   font-family: "Poppins Medium";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Medium.ttf");
+  src: url("./../src/ui/assets/fonts/Poppins-Medium.ttf");
 }
 
 @font-face {
   font-family: "Poppins Regular";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Regular.ttf");
+  src: url("./../src/ui/assets/fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
   font-family: "Poppins SemiBold";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+  src: url("./../src/ui/assets/fonts/Poppins-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "Poppins Bold";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Bold.ttf");
+  src: url("./../src/ui/assets/fonts/Poppins-Bold.ttf");
 }
 
 @font-face {
   font-family: "Poppins ExtraBold";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+  src: url("./../src/ui/assets/fonts/Poppins-ExtraBold.ttf");
 }
 
 @font-face {
   font-family: "Poppins Light";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Light.ttf");
+  src: url("./../src/ui/assets/fonts/Poppins-Light.ttf");
 }
 
 @font-face {
   font-family: "Poppins Thin";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Thin.ttf");
+  src: url("./../src/ui/assets/fonts/Poppins-Thin.ttf");
 }
 
 * {
@@ -91,35 +91,6 @@ body ::-webkit-scrollbar-thumb {
   background: hsla(0, 0%, 100%, 0.1);
 }
 
-.btn {
-  border-radius: 13px;
-  padding: 14px 0;
-  width: 160px;
-  cursor: pointer;
-  transition: 0.2s;
-  font-family: "Poppins SemiBold";
-  border: none;
-}
-
-.btn:active {
-  transform: translateY(2px);
-}
-
-.primary-btn {
-  margin: 10px;
-  color: white;
-  border: 2px solid F6B17A;
-  font-size: 12px;
-  background-color: #7077a1;
-  transition: border 0.7s ease-out, background-color 0.7s ease-out;
-}
-
-.primary-btn:hover {
-  color: aliceblue;
-  border: 2px solid #ff5823;
-  background-color: #1f2235;
-  transition: border 0.7s ease-in, background-color 0.7s ease-in;
-}
 
 .highlighted-btn {
   color: aliceblue;

@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './IvitaeApp.tsx'
-import './index.style.css'
+import ContainerApp from './Container.tsx'
+
+import './main.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <ContainerApp />
+  </React.StrictMode>
 )
