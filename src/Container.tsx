@@ -1,5 +1,4 @@
 import { HomeTemplate } from './ui/components/template/HomeTemplate'
-
 import './container.css'
 
 function ContainerApp() {

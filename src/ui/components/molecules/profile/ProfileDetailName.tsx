@@ -12,10 +12,11 @@ export const ProfileDetailName = () => {
                 Hola , Soy  <span
                     style={{
                         marginLeft: '9px',
-                        marginTop: '1px'
+                        marginTop: '1px',
+                        color:'#EBD9B4'
                     }}
                     className="highlighted-text"
-                >Victor Alvarez</span>
+                >Victor Alvarez Rojas</span>
             </span>
         </div>
     )

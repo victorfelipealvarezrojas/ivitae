@@ -5,6 +5,7 @@ interface ButtonProps {
     style   : string
 }
 
+
 export const Button: React.FC<ButtonProps> = ({ children, style }) => {
     return (
         <button className = {`btn ${style}`}>

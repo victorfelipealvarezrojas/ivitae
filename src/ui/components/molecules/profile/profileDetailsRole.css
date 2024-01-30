@@ -1,9 +1,10 @@
-.profile-role-tagline {
-    font-size: 19px;
-    margin: 5px 0 0 0;
-    font-family: "Poppins Light";
-  }
 
-  .profile-details-role h1 {
-    font-size: 30px;
-  }
+.profile-details-role h1 {
+  font-size: 30px;
+  height: 30px;
+}
+
+.primary-text {
+
+}
+

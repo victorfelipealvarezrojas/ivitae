@@ -11,7 +11,7 @@ export const DownloadLinkButton: React.FC<IProps> = ({
     return (
         <a className={`${style}`}
             href="../../../document/victoralvarezCV.pdf"
-            download='victor felipealvarez rojas.pdf'
+            download='victor felipe alvarez rojas.pdf'
         >
             {children}
         </a>

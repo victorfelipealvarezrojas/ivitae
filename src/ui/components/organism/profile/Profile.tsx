@@ -4,9 +4,11 @@ import { ProfileOptions } from "../../molecules/profile/ProfileOptions"
 import { ProfilePicture } from "../../molecules/profile/ProfilePicture"
 import { SocialMedia } from "../../molecules/socialMedia/SocialMedia"
 
+import './profile.css'
+
 export const Profile = () => {
     return (
-        <div className='profile-container c-iaYlHO'>
+        <div className='profile-container'>
             <div className='profile-parent'>
                 <div className="profile-details">
                     <SocialMedia />
@@ -14,7 +16,10 @@ export const Profile = () => {
                     <ProfileDetailsRole />
                     <ProfileOptions />
                 </div>
-                <ProfilePicture />
+                <div className="profile-picture" >
+                    <ProfilePicture />
+                </div>
+
             </div>
         </div>
     )

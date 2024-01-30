@@ -1,0 +1,38 @@
+.profile-container {
+  display: flex;
+  height: 305px;
+  width: 100%;
+  background-color: #5f8081;
+  justify-content: space-around;
+}
+.profile-parent {
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+  align-items: center;
+  color: aliceblue;
+}
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+.profile-details-name {
+  font-size: 20px;
+  font-family: "Poppins SemiBold";
+}
+.profile-details-role {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0 20px 0;
+}
+.profile-details-role h1 {
+  font-family: cursive;
+}
+.profile-picture {
+  box-shadow: 6px 5px 2px 0px #EBD9B4;
+  height: 225px;
+  width: 225px;
+  border-radius: 50%;
+  padding: 20px;
+}
+

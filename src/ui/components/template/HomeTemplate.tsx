@@ -4,6 +4,16 @@ import './homeTemplate.css'
 
 export const HomeTemplate = () => {
     return (
-        <Profile />
+        <div style={{
+            display:'flex',
+            flexDirection:'column',
+            alignItems:'center',
+        }}>
+            <Profile />
+            <div className="back-ground-container">
+               Content
+            </div>
+        </div>
+
     )
 }

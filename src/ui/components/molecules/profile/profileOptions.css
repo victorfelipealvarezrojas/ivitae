@@ -4,3 +4,16 @@
 .profile-options .highlighted-btn:hover {
   margin: 0 0 0 28px;
 }
+
+.highlighted-btn {
+  color: aliceblue;
+  border: 2px solid #f6b17a;
+  font-size: 12px;
+  background-color: #f6b17a;
+  transition: border 0.7s ease-out, background-color 0.7s ease-out;
+}
+.highlighted-btn:hover {
+  color: aliceblue;
+  border: 2px solid #1f2235;
+  transition: border 0.7s ease-in, background-color 0.7s ease-in;
+}
