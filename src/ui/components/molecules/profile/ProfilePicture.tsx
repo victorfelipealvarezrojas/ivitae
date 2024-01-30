@@ -1,12 +1,13 @@
-import calvo from './../../../assets/png/calvo.png'
-import './profilePicture.css'
+import './profilePicture.css';
 
-export const ProfilePicture = () => {
+const ProfilePicture = () => {
   return (
     <div>
       <div>
-        <img style={{ margin: '20px' }} height="180" src={calvo} alt="calvo" />
+        <img style={{ margin: '20px' }} height="180" src='./src/ui/assets/png/calvo.png' alt="calvo" />
       </div>
     </div>
   )
-}
+};
+
+export default ProfilePicture;

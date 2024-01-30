@@ -6,6 +6,6 @@ import { Profile } from './../../../../src/ui/components/organism/profile/Profil
 
 test('Renders Profile page correctly', async () => {
     render(<Profile />);
-    const nameElement = screen.getByText(/Victor Alvarez/i);
+    const nameElement = screen.getByText(/Victor Alvarez Rojas/i);
     expect(nameElement).toBeInTheDocument();
 });

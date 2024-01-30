@@ -1,7 +1,7 @@
 import { ProfileDetailName } from "../../molecules/profile/ProfileDetailName"
 import { ProfileDetailsRole } from "../../molecules/profile/ProfileDetailsRole"
 import { ProfileOptions } from "../../molecules/profile/ProfileOptions"
-import { ProfilePicture } from "../../molecules/profile/ProfilePicture"
+import  ProfilePicture  from "../../molecules/profile/ProfilePicture"
 import { SocialMedia } from "../../molecules/socialMedia/SocialMedia"
 
 import './profile.css'
