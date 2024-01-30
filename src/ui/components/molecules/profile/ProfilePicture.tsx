@@ -1,10 +1,11 @@
+import calvo from './../../../assets/header/calvo.webp';
 import './profilePicture.css';
 
 const ProfilePicture = () => {
   return (
     <div>
       <div>
-        <img style={{ margin: '20px' }} height="180" src='./src/ui/assets/png/calvo.png' alt="calvo" />
+        <img style={{ margin: '0px', borderRadius:'100%' }} height="200" src={calvo} alt="calvo" />
       </div>
     </div>
   )
