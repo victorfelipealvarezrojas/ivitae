@@ -1,0 +1,46 @@
+.img-profile {
+  margin: 150px 0px 0px 0px;
+  border-radius: 100%;
+}
+
+.container-profile-img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.background-img {
+  width: 400px;
+  height: 500px;
+  background-image: url("./../../../assets/header/blob-haikei.svg");
+  background-size: cover;
+  background-position: center;
+  animation: changeShape 10s infinite;
+}
+
+@keyframes changeShape {
+  0% {
+    background-image: url("./../../../assets/header/blob-haikei.svg");
+  }
+  15% {
+    background-image: url("./../../../assets/header/blob-haikei-2.svg");
+  }
+  30% {
+    background-image: url("./../../../assets/header/blob-haikei-3.svg");
+  }
+  45% {
+    background-image: url("./../../../assets/header/blob-haikei-4.svg");
+  }
+  60% {
+    background-image: url("./../../../assets/header/blob-haikei.svg");
+  }
+  75% {
+    background-image: url("./../../../assets/header/blob-haikei-2.svg");
+  }
+  90% {
+    background-image: url("./../../../assets/header/blob-haikei-3.svg");
+  }
+  100% {
+    background-image: url("./../../../assets/header/blob-haikei.svg");
+  }
+}

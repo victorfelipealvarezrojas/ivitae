@@ -1,7 +1,8 @@
 #root {
   margin: 0 auto;
   text-align: center;
-  max-width: 100%;
+  width: 80%;
+  min-width: 800px;
   --light-blue: #04c3ff;
   --light-blue-shadow: rgb(69 211 255 / 27%);
   --sea-green: #0abead;

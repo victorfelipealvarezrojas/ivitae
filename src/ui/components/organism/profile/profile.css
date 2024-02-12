@@ -1,20 +1,23 @@
 .profile-container {
   display: flex;
-  height: 305px;
+  height: 250px;
   width: 100%;
   background-color: #5f8081;
   justify-content: space-around;
+
 }
+
 .profile-parent {
   display: flex;
-  justify-content: space-around;
-  width: 55%;
+  justify-content: space-between;
+  width: 100%;
   align-items: center;
   color: aliceblue;
 }
 .profile-details {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .profile-details-name {
   font-size: 20px;
@@ -27,12 +30,5 @@
 }
 .profile-details-role h1 {
   font-family: cursive;
-}
-.profile-picture {
-  box-shadow: 6px 5px 2px 0px #EBD9B4;
-  height: 225px;
-  width: 225px;
-  border-radius: 50%;
-  padding: 20px;
 }
 
