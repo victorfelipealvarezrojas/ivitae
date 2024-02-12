@@ -10,13 +10,13 @@
 }
 
 .background-img {
-  margin-top: -50px;
+  margin-top: -60px;
   width: 410px;
   height: 600px;
   background-image: url("./../../../assets/header/blob-haikei-5.svg");
   background-size: cover;
   background-position: center;
-  animation: rotateImage 10s linear infinite;
+  animation: rotateImage 6s linear infinite;
 }
 
 .foreground-img {
