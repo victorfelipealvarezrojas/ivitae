@@ -4,9 +4,10 @@ import './profilePicture.css';
 const ProfilePicture = () => {
   return (
     <div className='container-profile-img'>
-      <div className='background-img water-drop'>
-        <img className='img-profile' height="230" src={calvo} alt="calvo" />
-      </div>
+      <div className='background-img'/>
+      <div className='foreground-img'>
+          <img className='img-profile' height="230" src={calvo} alt="calvo" />
+        </div>
     </div>
   )
 };

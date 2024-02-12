@@ -1,5 +1,5 @@
 .img-profile {
-  margin: 150px 0px 0px 0px;
+  margin: 130px 0px 0px 90px;
   border-radius: 100%;
 }
 
@@ -10,46 +10,28 @@
 }
 
 .background-img {
-  width: 400px;
-  height: 500px;
-  background-image: url("./../../../assets/header/blob-haikei.svg");
+  margin-top: -50px;
+  width: 410px;
+  height: 600px;
+  background-image: url("./../../../assets/header/blob-haikei-5.svg");
   background-size: cover;
   background-position: center;
-  animation: changeShape 10s infinite;
+  animation: rotateImage 10s linear infinite;
 }
 
-@keyframes changeShape {
-  0% {
-    background-image: url("./../../../assets/header/blob-haikei.svg");
+.foreground-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes rotateImage {
+  from {
+    transform: rotate(0deg);
   }
-  10% {
-    background-image: url("./../../../assets/header/blob-haikei-2.svg");
-  }
-  20% {
-    background-image: url("./../../../assets/header/blob-haikei-3.svg");
-  }
-  30% {
-    background-image: url("./../../../assets/header/blob-haikei-4.svg");
-  }
-  40% {
-    background-image: url("./../../../assets/header/blob-haikei.svg");
-  }
-  50% {
-    background-image: url("./../../../assets/header/blob-haikei-2.svg");
-  }
-  60% {
-    background-image: url("./../../../assets/header/blob-haikei-3.svg");
-  }
-  70% {
-    background-image: url("./../../../assets/header/blob-haikei.svg");
-  }
-  80% {
-    background-image: url("./../../../assets/header/blob-haikei-4.svg");
-  }
-  90% {
-    background-image: url("./../../../assets/header/blob-haikei-3.svg");
-  }
-  100% {
-    background-image: url("./../../../assets/header/blob-haikei.svg");
+  to {
+    transform: rotate(360deg);
   }
 }
