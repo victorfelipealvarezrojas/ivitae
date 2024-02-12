@@ -22,20 +22,29 @@
   0% {
     background-image: url("./../../../assets/header/blob-haikei.svg");
   }
-  15% {
+  10% {
     background-image: url("./../../../assets/header/blob-haikei-2.svg");
   }
-  30% {
+  20% {
     background-image: url("./../../../assets/header/blob-haikei-3.svg");
   }
-  45% {
+  30% {
     background-image: url("./../../../assets/header/blob-haikei-4.svg");
   }
-  60% {
+  40% {
     background-image: url("./../../../assets/header/blob-haikei.svg");
   }
-  75% {
+  50% {
     background-image: url("./../../../assets/header/blob-haikei-2.svg");
+  }
+  60% {
+    background-image: url("./../../../assets/header/blob-haikei-3.svg");
+  }
+  70% {
+    background-image: url("./../../../assets/header/blob-haikei.svg");
+  }
+  80% {
+    background-image: url("./../../../assets/header/blob-haikei-4.svg");
   }
   90% {
     background-image: url("./../../../assets/header/blob-haikei-3.svg");
