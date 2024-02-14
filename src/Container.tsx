@@ -1,15 +1,22 @@
-import { HomeTemplate } from './ui/components/template/HomeTemplate'
+import { BrowserRouter as Router, Routes, Route, RouterProvider } from 'react-router-dom';
+import { HomeTemplate } from './presentation/components/template/HomeTemplate'
+
 import './container.css'
+
+
+
+import Navbar from "./NavBar"
+import Sidebar from "./Sidebar"
+import Submenu from "./Submenu"
+import sublinks, { router } from './presentation/routes/data';
+
+
 
 function ContainerApp() {
 
+
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column'
-    }}>
-      <HomeTemplate />
-    </div>
+    <RouterProvider router={router} />
   )
 }
 
