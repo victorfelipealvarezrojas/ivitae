@@ -1,15 +1,7 @@
-import { BrowserRouter as Router, Routes, Route, RouterProvider } from 'react-router-dom';
-import { HomeTemplate } from './presentation/components/template/HomeTemplate'
+import { RouterProvider } from 'react-router-dom';
+import { router } from './presentation/routes/data';
 
-import './container.css'
-
-
-
-import Navbar from "./NavBar"
-import Sidebar from "./Sidebar"
-import Submenu from "./Submenu"
-import sublinks, { router } from './presentation/routes/data';
-
+import './container.css';
 
 
 function ContainerApp() {
