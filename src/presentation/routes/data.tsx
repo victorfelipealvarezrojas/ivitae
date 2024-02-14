@@ -1,4 +1,4 @@
-import { Navigate, Outlet, createBrowserRouter } from "react-router-dom"
+import {  Outlet, createBrowserRouter } from "react-router-dom"
 
 import {
     Fa500Px,
