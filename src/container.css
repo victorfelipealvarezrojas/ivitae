@@ -1,8 +1,8 @@
 #root {
   margin: 0 auto;
   text-align: center;
-  width: 80%;
-  min-width: 800px;
+  width: 85%;
+
   --light-blue: #04c3ff;
   --light-blue-shadow: rgb(69 211 255 / 27%);
   --sea-green: #0abead;
@@ -23,3 +23,11 @@
   --loader-color: #0cbfae;
 }
 
+
+@media only screen and (max-width: 767px) {
+  #root {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+}

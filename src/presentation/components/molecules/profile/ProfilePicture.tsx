@@ -6,7 +6,7 @@ const ProfilePicture = () => {
     <div className='container-profile-img'>
       <div className='background-img'/>
       <div className='foreground-img'>
-          <img className='img-profile' height="230" src={calvo} alt="calvo" />
+          <img className='img-profile' src={calvo} alt="calvo" />
         </div>
     </div>
   )

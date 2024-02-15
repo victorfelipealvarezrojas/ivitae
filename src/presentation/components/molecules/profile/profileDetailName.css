@@ -1,4 +1,10 @@
 .profile-details-name {
-    font-size: 18px;
-    height: 30px;
+  font-size: 18px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .profile-details-name {
+    display: none;
   }
+}

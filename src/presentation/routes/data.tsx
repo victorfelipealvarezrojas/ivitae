@@ -1,4 +1,4 @@
-import {  Outlet, createBrowserRouter } from "react-router-dom"
+import { Outlet, createBrowserRouter } from "react-router-dom"
 
 import {
     Fa500Px,
@@ -41,6 +41,48 @@ export const sublinks = [
                 url: '/document/outbox',
                 component: <Hero />,
             },
+            {
+                id: nanoid(),
+                label: 'roles',
+                icon: <FaAdversal />,
+                url: '/document/outbox',
+                component: <Hero />,
+            },
+            {
+                id: nanoid(),
+                label: 'roles',
+                icon: <FaAdversal />,
+                url: '/document/outbox',
+                component: <Hero />,
+            },
+            {
+                id: nanoid(),
+                label: 'roles',
+                icon: <FaAdversal />,
+                url: '/document/outbox',
+                component: <Hero />,
+            },
+            {
+                id: nanoid(),
+                label: 'roles',
+                icon: <FaAdversal />,
+                url: '/document/outbox',
+                component: <Hero />,
+            },
+            {
+                id: nanoid(),
+                label: 'roles',
+                icon: <FaAdversal />,
+                url: '/document/outbox',
+                component: <Hero />,
+            },
+            {
+                id: nanoid(),
+                label: 'roles',
+                icon: <FaAdversal />,
+                url: '/document/outbox',
+                component: <Hero />,
+            },
         ],
     },
     {
@@ -51,14 +93,14 @@ export const sublinks = [
                 id: nanoid(),
                 label: 'starters',
                 icon: <FaDocker />,
-                url: '/resources/starters',
+                url: '/document/starters',
                 component: <Hero />,
             },
             {
                 id: nanoid(),
                 label: 'showcase',
                 icon: <FaGithubSquare />,
-                url: '/resources/showcase',
+                url: '/document/showcase',
                 component: <Hero />,
             },
         ],
@@ -86,17 +128,15 @@ export const router = createBrowserRouter([
             </section>
         </>,
         children: [
+            ...sublinks.flatMap(route =>
+                route.links.map(link => ({
+                    path: link.url.replace('/document/', ''),
+                    element: link.component
+                }))
+            ),
             {
                 path: "",
                 element: <Hero />
-            },
-            {
-                path: "hero",
-                element: <Hero />
-            },
-            {
-                path: "arq",
-                element: <Architectura />
             }
         ]
     },

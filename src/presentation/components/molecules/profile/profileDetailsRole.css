@@ -4,7 +4,10 @@
   height: 30px;
 }
 
-.primary-text {
 
+@media only screen and (max-width: 767px) {
+  .profile-details-role h1 {
+    display: none;
+  }
 }
 

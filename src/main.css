@@ -1,11 +1,4 @@
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+
 
 @font-face {
   font-family: "Poppins Medium";
@@ -98,7 +91,7 @@ html {
 
 :root {
   /* colors */
-  --primary-100: #dbeafe;
+  --primary-100: #fee8db;
   --primary-200: #bfdbfe;
   --primary-300: #a5b4fc;
   --primary-400: #818cf8;
@@ -203,7 +196,7 @@ Hero
   place-items: center;
 }
 .hero-center {
-  color: var(--white);
+  color: #f35c05ea;
   width: var(--fluid-width);
   max-width: var(--max-width);
 }
@@ -324,7 +317,7 @@ Nav Links
   }
   .nav-link {
     padding: 0 1rem;
-    color: var(--white);
+    color: #f35c05ea;
     background: transparent;
     border-color: transparent;
     font-size: 1.25rem;
