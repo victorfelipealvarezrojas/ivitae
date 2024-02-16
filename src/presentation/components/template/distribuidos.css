@@ -6,6 +6,7 @@
   line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
   font-size: 16px; /* Tamaño de fuente base */
   font-family: 'Arial', sans-serif; /* Familia de fuentes */
+  text-align: justify; /* Justificar el texto de ambos bordes */
 }
 
 /* Estilo para los títulos */
