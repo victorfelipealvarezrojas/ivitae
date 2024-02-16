@@ -1,6 +1,9 @@
 import { AppContextType, useGlobalContext } from './infrastructure/Context';
 import sublinks from './presentation/routes/data';
 import { useRef } from 'react';
+
+import './submenu.css'
+
 const Submenu = () => {
   const { pageId, setPageId } = useGlobalContext() as AppContextType;
   const currentPage = sublinks.find((item) => item.pageId === pageId);
