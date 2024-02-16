@@ -1,0 +1,90 @@
+/* Estilo para el contenedor principal del contenido Markdown */
+.markdown-container {
+  max-width: 800px; /* Ancho máximo del contenedor para controlar el ancho del texto */
+  margin: 20px auto; /* Margen superior e inferior de 20px y margen izquierdo y derecho automático para centrar el contenedor */
+  padding: 20px; /* Espaciado interno del contenedor */
+  line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+  font-size: 16px; /* Tamaño de fuente base */
+  font-family: 'Arial', sans-serif; /* Familia de fuentes */
+}
+
+/* Estilo para los títulos */
+.markdown-container h1,
+.markdown-container h2,
+.markdown-container h3 {
+  margin-top: 20px; /* Espaciado superior entre encabezados y elementos anteriores */
+  margin-bottom: 10px; /* Espaciado inferior entre encabezados y elementos posteriores */
+}
+
+/* Estilo para los párrafos */
+.markdown-container p {
+  margin-bottom: 15px; /* Espaciado inferior entre párrafos */
+}
+
+/* Estilo para las listas no ordenadas */
+.markdown-container ul {
+  margin-bottom: 15px; /* Espaciado inferior entre listas no ordenadas */
+  list-style-type: disc; /* Tipo de viñeta */
+}
+
+/* Estilo para las listas ordenadas */
+.markdown-container ol {
+  margin-bottom: 15px; /* Espaciado inferior entre listas ordenadas */
+  list-style-type: decimal; /* Tipo de numeración */
+}
+
+/* Estilo para los elementos de la lista */
+.markdown-container li {
+  margin-bottom: 5px; /* Espaciado inferior entre elementos de la lista */
+}
+
+/* Estilo para los enlaces */
+.markdown-container a {
+  color: #007bff; /* Color de los enlaces */
+  text-decoration: underline; /* Subrayado de los enlaces */
+}
+
+/* Estilo para los bloques de código */
+.markdown-container pre {
+  background-color: #f4f4f4; /* Color de fondo del bloque de código */
+  padding: 10px; /* Espaciado interno del bloque de código */
+  border-radius: 5px; /* Radio de borde del bloque de código */
+  overflow-x: auto; /* Permitir desplazamiento horizontal si el contenido es demasiado ancho */
+}
+
+/* Estilo para las tablas */
+.markdown-container table {
+  width: 100%; /* Ancho completo de la tabla */
+  border-collapse: collapse; /* Colapsar los bordes de la tabla */
+}
+
+/* Estilo para las celdas de la tabla */
+.markdown-container td,
+.markdown-container th {
+  border: 1px solid #ddd; /* Borde de 1px sólido con color gris claro */
+  padding: 8px; /* Espaciado interno de las celdas */
+}
+
+/* Estilo para las citas */
+.markdown-container blockquote {
+  margin-left: 0; /* Eliminar margen izquierdo predeterminado */
+  padding: 10px 20px; /* Espaciado interno de la cita */
+  background-color: #f9f9f9; /* Color de fondo de la cita */
+  border-left: 4px solid #ccc; /* Borde izquierdo de 4px sólido con color gris */
+}
+
+/* Estilo para los elementos de definición */
+.markdown-container dl {
+  margin-bottom: 15px; /* Espaciado inferior entre elementos de definición */
+}
+
+/* Estilo para los términos de definición */
+.markdown-container dt {
+  font-weight: bold; /* Peso de la fuente en negrita */
+}
+
+/* Estilo para las descripciones de definición */
+.markdown-container dd {
+  margin-left: 0; /* Eliminar margen izquierdo predeterminado */
+  margin-bottom: 5px; /* Espaciado inferior entre descripciones de definición */
+}

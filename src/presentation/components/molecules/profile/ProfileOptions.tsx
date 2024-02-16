@@ -1,5 +1,5 @@
 
-import { Button } from '../../atoms/button/Button'
+import { Button } from '../../atoms/button/ButtonWithImage'
 import { Text } from '../../atoms/text/Text'
 import { DownloadLinkButton } from '../../atoms/link/DownloadLink'
 

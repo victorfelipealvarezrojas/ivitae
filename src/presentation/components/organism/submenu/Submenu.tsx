@@ -1,5 +1,5 @@
-import { AppContextType, useGlobalContext } from './infrastructure/Context';
-import sublinks from './presentation/routes/data';
+import { AppContextType, useGlobalContext } from '../../../../infrastructure/Context';
+import sublinks from '../../../routes/data';
 import { useRef } from 'react';
 
 import './submenu.css'

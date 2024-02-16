@@ -1,7 +1,7 @@
 import { FaTimes } from 'react-icons/fa';
 
-import { AppContextType, useGlobalContext } from './infrastructure/Context';
-import sublinks from './presentation/routes/data';
+import { AppContextType, useGlobalContext } from '../../../../infrastructure/Context';
+import sublinks from '../../../routes/data';
 
 const Sidebar = () => {
     const { sidebarState,isSidebarOpen  } = useGlobalContext() as AppContextType;

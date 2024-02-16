@@ -1,107 +1,53 @@
-import { Outlet, createBrowserRouter } from "react-router-dom"
-
+import { createBrowserRouter } from "react-router-dom"
 import {
     Fa500Px,
     FaAccusoft,
-    FaAdversal,
     FaDocker,
     FaGithubSquare,
 } from 'react-icons/fa';
 import { nanoid } from 'nanoid';
-import Hero from '../../Hero';
-import { Architectura } from '../../Architectura';
 import { HomeTemplate } from "../components/template/HomeTemplate";
-import Navbar from "../../NavBar";
-import Sidebar from "../../Sidebar";
-import Submenu from "../../Submenu";
+import { Distribuidos } from "../components/template/Distribuidos";
+import { DocumentationTemplate } from "../components/template/DocumentationTemplate";
 
 export const sublinks = [
     {
         pageId: nanoid(),
-        page: 'document',
+        page: 'Arquitectura de software',
         links: [
             {
                 id: nanoid(),
-                label: 'Arquitectura',
+                label: 'Microservicios',
                 icon: <Fa500Px />,
-                url: '/document/arq',
-                component: <Hero />,
+                url: '/document/mic',
+                component: <p>arquitectura</p>,
             },
             {
                 id: nanoid(),
-                label: 'content',
+                label: 'Monolitica',
                 icon: <FaAccusoft />,
-                url: '/document/hero',
-                component: <Architectura />,
-            },
-            {
-                id: nanoid(),
-                label: 'roles',
-                icon: <FaAdversal />,
-                url: '/document/outbox',
-                component: <Hero />,
-            },
-            {
-                id: nanoid(),
-                label: 'roles',
-                icon: <FaAdversal />,
-                url: '/document/outbox',
-                component: <Hero />,
-            },
-            {
-                id: nanoid(),
-                label: 'roles',
-                icon: <FaAdversal />,
-                url: '/document/outbox',
-                component: <Hero />,
-            },
-            {
-                id: nanoid(),
-                label: 'roles',
-                icon: <FaAdversal />,
-                url: '/document/outbox',
-                component: <Hero />,
-            },
-            {
-                id: nanoid(),
-                label: 'roles',
-                icon: <FaAdversal />,
-                url: '/document/outbox',
-                component: <Hero />,
-            },
-            {
-                id: nanoid(),
-                label: 'roles',
-                icon: <FaAdversal />,
-                url: '/document/outbox',
-                component: <Hero />,
-            },
-            {
-                id: nanoid(),
-                label: 'roles',
-                icon: <FaAdversal />,
-                url: '/document/outbox',
-                component: <Hero />,
+                url: '/document/mono',
+                component: <p>arquitectura2</p>,
             },
         ],
     },
     {
-        page: 'resources',
+        page: 'Patrones de diseño y Paradigmas',
         pageId: nanoid(),
         links: [
             {
                 id: nanoid(),
-                label: 'starters',
+                label: 'Basicos',
                 icon: <FaDocker />,
-                url: '/document/starters',
-                component: <Hero />,
+                url: '/document/bsic',
+                component: <p>arquitectura</p>,
             },
             {
                 id: nanoid(),
-                label: 'showcase',
+                label: 'Sistemas Distribuidos',
                 icon: <FaGithubSquare />,
-                url: '/document/showcase',
-                component: <Hero />,
+                url: '/document/dist',
+                component: <Distribuidos />,
             },
         ],
     },
@@ -115,29 +61,18 @@ export const router = createBrowserRouter([
     },
     {
         path: "/document",
-        element: <>
-            <Navbar />
-            <Sidebar />
-            <Submenu />
-            <section className="content">
-                <div className="">
-                    <div className="">
-                        <Outlet />
-                    </div>
-                </div>
-            </section>
-        </>,
+        element: <DocumentationTemplate />,
         children: [
+            {
+                path: "",
+                element: <p>Root</p>,
+            },
             ...sublinks.flatMap(route =>
                 route.links.map(link => ({
                     path: link.url.replace('/document/', ''),
                     element: link.component
                 }))
-            ),
-            {
-                path: "",
-                element: <Hero />
-            }
+            )
         ]
     },
 
